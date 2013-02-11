@@ -50,7 +50,7 @@ class Bliss_Crosssellcategory_Block_Cart_Crosssell extends Mage_Checkout_Block_C
                 if (count($items) < $this->_maxItemCount) {
                     $filterProductIds = array_merge($this->_getCartProductIds(), $this->_getCartProductIdsRel());
                     $collection = $this->_getOverrideCollection()
-                        ->addIdFilter($ninProductIds,true)
+                        ->addIdFilter($filterProductIds,true)
                         ->setPageSize($this->_maxItemCount-count($items))
                         ->load();
                     foreach ($collection as $item) {
