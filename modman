@@ -1,6 +1,6 @@
 # modman module description
 # see https://github.com/colinmollenhour/modman/ for more info
 
-#Bliss Cross Sell Category
-app/code/community/Bliss/Crosssellcategory/*	app/code/community/Bliss/Crosssellcategory/
-app/etc/modules/Bliss_Crosssellcategory.xml	app/etc/modules/Bliss_Crosssellcategory.xml
+#Bliss Catalog Tools
+app/code/community/Bliss/Catalog/*	app/code/community/Bliss/Catalog/
+app/etc/modules/Bliss_Catalog.xml	app/etc/modules/Bliss_Catalog.xml

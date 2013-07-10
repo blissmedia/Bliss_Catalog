@@ -3,14 +3,14 @@
  * Cart crosssell list with category override option
  *
  * @category   Bliss
- * @package    Bliss_Crosssellcategory
+ * @package    Bliss_Catalog
  * @author     James Harrison <james@blissmedia.com.au>
  */
-class Bliss_Crosssellcategory_Block_Cart_Crosssell extends Mage_Checkout_Block_Cart_Crosssell
+class Bliss_Catalog_Block_Cart_Crosssell extends Mage_Checkout_Block_Cart_Crosssell
 {
 
-    const XML_PATH_CROSSSELL_USE_CATEGORY        = 'checkout/cart/crosssell_use_category';
-    const XML_PATH_CROSSSELL_CATEGORY_ID         = 'checkout/cart/crosssell_category_id';
+    const XML_PATH_CROSSSELL_USE_CATEGORY        = 'checkout/cart/bcatalog_crosssell_use_category';
+    const XML_PATH_CROSSSELL_CATEGORY_ID         = 'checkout/cart/bcatalog_crosssell_category_id';
 
     /**
      * Get crosssell items
@@ -50,7 +50,7 @@ class Bliss_Crosssellcategory_Block_Cart_Crosssell extends Mage_Checkout_Block_C
                 if (count($items) < $this->_maxItemCount) {
                     $filterProductIds = array_merge($this->_getCartProductIds(), $this->_getCartProductIdsRel());
                     $collection = $this->_getOverrideCollection()
-                        ->addIdFilter($filterProductIds,true)
+                        ->addIdFilter($ninProductIds,true)
                         ->setPageSize($this->_maxItemCount-count($items))
                         ->load();
                     foreach ($collection as $item) {
