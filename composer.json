@@ -1,0 +1,13 @@
+{
+    "name":"blissmedia/catalog",
+    "type":"magento-module",
+    "homepage":"https://bitbucket.org/blissmedia/catalog-tools",
+    "authors":[
+        {
+            "name":"James Harrison"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
