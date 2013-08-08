@@ -1,6 +1,3 @@
-# modman module description
-# see https://github.com/colinmollenhour/modman/ for more info
-
 #Bliss Catalog Tools
-app/code/community/Bliss/Catalog/*	app/code/community/Bliss/Catalog/
-app/etc/modules/Bliss_Catalog.xml	app/etc/modules/Bliss_Catalog.xml
+app/code/community/Bliss/Catalog	            app/code/community/Bliss/Catalog
+app/etc/modules/*	                            app/etc/modules/
