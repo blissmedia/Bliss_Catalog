@@ -2,24 +2,21 @@
 <config>
     <modules>
         <Bliss_Catalog>
-            <version>1.0.1.0</version>
+            <version>1.0.0.0</version>
         </Bliss_Catalog>
     </modules>
     <global>
         <blocks>
-            <bcatalog>
-                <class>Bliss_Catalog_Block</class>
-            </bcatalog>
-            <checkout>
+            <catalog>
                 <rewrite>
-                    <cart_crosssell>Bliss_Catalog_Block_Cart_Crosssell</cart_crosssell>
+                    <product_list_promotion>Bliss_Catalog_Block_Product_List_Promotion</product_list_promotion>
                 </rewrite>
-            </checkout>
+            </catalog>
         </blocks>
         <models>
             <bcatalog>
                 <class>Bliss_Catalog_Model</class>
-                <resourceModel>bliss_resource</resourceModel>
+                <resourceModel>bcatalog_resource</resourceModel>
             </bcatalog>
             <bcatalog_resource>
                 <class>Bliss_Catalog_Model_Resource</class>
