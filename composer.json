@@ -1,7 +1,7 @@
 {
-    "name":"blissmedia/catalog",
+    "name":"blissmedia/catalog-tools",
     "type":"magento-module",
-    "homepage":"https://bitbucket.org/blissmedia/catalog-tools",
+    "homepage":"https://github.com/blissmedia/catalog-tools",
     "authors":[
         {
             "name":"James Harrison"
