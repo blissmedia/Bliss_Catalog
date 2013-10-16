@@ -67,7 +67,7 @@ class Bliss_Catalog_Helper_Badge extends Mage_Core_Helper_Abstract
          * More values can be added via bcatalog_badge attribute
          */
         if($badgeLabel = $product->getAttributeText('bcatalog_badge')) {
-            $badge['code']  = strtolower($badgeLabel);
+            $badge['code']  = strtolower(str_replace(' ', '_', $badgeLabel));
             $badge['label'] = $badgeLabel;
             return $badge;
         }
