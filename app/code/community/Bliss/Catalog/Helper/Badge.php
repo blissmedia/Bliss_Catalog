@@ -4,14 +4,10 @@ class Bliss_Catalog_Helper_Badge extends Mage_Core_Helper_Abstract
 {
     /**
      * Method for getting a given product's badge (new, sale, featured, etc)
-     * Only 1 badge is ever returned, so the order in which they are presented here determines which badge takes priority
+     * Only 1 badge is ever returned, so 'catalog/frontend/override_product_badge'
+     * config can be used to determine whether use the special dates or sale dates
+     * to override the product badge attribute or not
      *
-     * Priorities:
-     *   1. New
-     *   2. Sale
-     *   3. Custom
-     *
-     * TODO: Add functionality to set priorities in config
      *
      * @param $product Mage_Catalog_Model_Product
      * @return array
