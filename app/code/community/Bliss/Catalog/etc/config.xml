@@ -36,4 +36,11 @@
             </bcatalog>
         </helpers>
     </global>
+    <default>
+        <catalog>
+            <frontend>
+                <override_product_badge>0</override_product_badge>
+            </frontend>
+        </catalog>
+    </default>
 </config>
